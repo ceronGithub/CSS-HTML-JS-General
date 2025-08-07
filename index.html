@@ -4,19 +4,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <!-- Objects -->
+    <link rel="stylesheet" href="css/center-object.css">
     <link type="text/css" rel="stylesheet" href="css/style.css">
-    <link type="text/css" rel="stylesheet" href="css/sliding.css">
     <link type="text/css" rel="stylesheet" href="css/page.css">
+    <link type="text/css" rel="stylesheet" href="css/nav-bar.css">
+    <link type="text/css" rel="stylesheet" href="css/sliding.css">    
 </head>
 <body>
-    <div class="nav-bar">
-        <ul>
-            
-        </ul>
-    </div>
+    <div class="pages">
+        <textarea class="center-object" name="" id="" cols="170" rows="30" readonly>
+            .nav-bar{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 8vh;
+                background: black;    
+            }
+            .nav-bar ul.ul-row-left{    
+                position: absolute;
+                float: left;
+                left: 0;
+                color: white;
+                display: flex;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+            .nav-bar ul.ul-row-left li{  
+            height: 8vh;
+            width: 5vw;
+            display: flex;
+            justify-content: center; 
+            text-align:center;
+            align-items: center;
+            }
+            .nav-bar ul.ul-row-left li:hover{
+                color: rebeccapurple;
+            }
+        </textarea>
+        <div class="nav-bar">
+            <ul class="ul-row-left">
+                <li>Navbar</li>
+                <li>About</li>
+                <li>Story</li>
+            </ul>
+        </div>
+    </div>   
+    <hr>
+    <div class="pages">
+        <textarea class="center-object" name="" id="" cols="170" rows="30" readonly>
+            .nav-bar{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 8vh;
+                background: black;    
+            }
+            .nav-bar ul.ul-row-right{
+                float: right;
+                right: 0;
+                position: absolute;
+                color: white;
+                display: flex;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+            .nav-bar ul.ul-row-right li{    
+                height: 8vh;
+                width: 5vw;
+                display: flex;
+                justify-content: center; 
+                text-align:center;
+                align-items: center;
+            }
+
+            .nav-bar ul.ul-row-right li:hover{
+                color: rebeccapurple;
+            }
+        </textarea>
+        <div class="nav-bar">
+            <ul class="ul-row-right">
+                <li>Navbar</li>
+                <li>About</li>
+                <li>Story</li>
+            </ul>
+        </div>
+    </div>   
+    <hr>
     <div class="pages">
         <h1>hover_here_for_right_side_slide</h1>
-
         <div id="right-to-left-slide">
             <h6>hello</h6> 
             <div class="card"> 
