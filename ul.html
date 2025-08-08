@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- General -->
+    <link rel="stylesheet" href="css/center-object.css">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <link type="text/css" rel="stylesheet" href="css/page.css">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- ul -->
+<link rel="stylesheet" href="css/ul/row.css">
+</head>
+<body>
+    <div class="pages">
+        <textarea class="center-object" name="" id="" cols="50" rows="30" wrap='off' readonly>
+            ========= HTML =========
+
+            <div class="left-box">            
+                <ul class="ul-row">
+                    <li>Ceron</li>
+                    <li>Matthew</li>
+                    <li>Calsena</li>
+                </ul>  
+                <ul class="ul-row">
+                    <li><img class="icons" src="image/VS.png" alt=""></li>
+                    <li><img class="icons" src="image/vscode-1.png" alt=""></li>
+                    <li><img class="icons" src="image/vscode.png" alt=""></li>
+                </ul>
+                <ul class="ul-row">
+                    <li><label for="img">image name</label><img class="icons" src="image/VS.png" alt=""></li>
+                    <li><label for="img">image name</label><img class="icons" src="image/vscode-1.png" alt=""></li>
+                    <li><label for="img">image name</label><img class="icons" src="image/vscode.png" alt=""></li>
+                </ul>            
+            </div>
+
+            ========= css =========
+
+            .left-box{
+                position: absolute;
+                display: list-item;
+                float: left;
+                left: 20px;
+                top: 0;
+                width: 15vw;
+                height: 100%;    
+
+                /* options */
+                /* justify-content: center; 
+                text-align:center;
+                align-items: center; */
+            }
+
+            .ul-row {
+                position: relative;
+                display: flex;
+                float: left;
+                left: 0;
+                top: 35%; /* option */
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                width: 100%; 
+            }
+
+            .ul-row li{  
+                display: inline;      
+                margin: 10px 5px;    
+            }
+            .ul-row li .icons{
+                height: 50px;
+                width: 50px;
+            }
+
+
+            ========= JS =========
+
+
+        </textarea>
+        <textarea class="center-object" name="" id="" cols="50" rows="30" wrap='off' readonly>
+            ========= HTML =========
+
+            <i class="fa-solid fa-bars right-open-bar"></i>
+            <div class="right-sliding-top-navbar">
+                <ul class="ul-row-right">                    
+                    <li>Navbar</li>
+                    <li>About</li>
+                    <li>Story</li>
+                    <li><i class="fa-solid fa-bars right-closed-bar"></i></li>
+                </ul>
+            </div>
+            <!-- js -->
+            <script src="js/navbar/right-sliding-top.js"></script>
+        </textarea>
+        <div class="left-box">
+            <h1> UL ROW</h1>      
+            <ul class="ul-row">
+                <li>Ceron</li>
+                <li>Matthew</li>
+                <li>Calsena</li>
+            </ul>  
+            <ul class="ul-row">
+                <li><img class="icons" src="image/VS.png" alt=""></li>
+                <li><img class="icons" src="image/vscode-1.png" alt=""></li>
+                <li><img class="icons" src="image/vscode.png" alt=""></li>
+            </ul>
+            <ul class="ul-row">
+                <li><label for="img">image name</label><img class="icons" src="image/VS.png" alt=""></li>
+                <li><label for="img">image name</label><img class="icons" src="image/vscode-1.png" alt=""></li>
+                <li><label for="img">image name</label><img class="icons" src="image/vscode.png" alt=""></li>
+            </ul>            
+        </div>
+    </div>
+</body>
+</html>
