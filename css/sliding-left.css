@@ -1,7 +1,7 @@
-#right-slide{
+#left-slide{
     position: absolute;
-    float: right;    
-    right: 0;
+    float: left;    
+    left: 0;
     top: 0;
     height: 100vh;
     width: 0vw;    
@@ -10,10 +10,10 @@
     overflow: hidden;
 }
 
-#right-slide .card{
+#left-slide .card{
     position: absolute;
-    float: right;    
-    right: 0;
+    float: left;    
+    left: 0;
     top: 0;
     height: 100vh;
     width: 50vw;    
@@ -22,11 +22,11 @@
 }
 
 
-.right-slide-h1{
+.left-slide-h1{
     position: absolute;
-    float: left;
+    float: right;
     top: 0;
-    left: 0;
+    right: 0;
     margin: 0;
     background: black;
     color: white;
@@ -34,16 +34,16 @@
 }
 
 
-.right-slide-h1:hover ~ #right-slide{
+.left-slide-h1:hover ~ #left-slide{
     width: 50%;
     background: red !important;
 }
 
-.right-slide-h1:hover ~ #right-slide > .card{        
+.left-slide-h1:hover ~ #left-slide > .card{        
     background: transparent;
 }
 
-.right-slide-h1:not(:hover) ~ #right-slide{
+.left-slide-h1:not(:hover) ~ #left-slide{
     transition: 1s 1s ease-out; 
 }
 

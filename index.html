@@ -10,7 +10,10 @@
     <link type="text/css" rel="stylesheet" href="css/style.css">
     <link type="text/css" rel="stylesheet" href="css/page.css">
     <link type="text/css" rel="stylesheet" href="css/nav-bar.css">
+
+    <!-- Sliding -->
     <link type="text/css" rel="stylesheet" href="css/sliding-right.css">    
+    <link rel="stylesheet" href="css/sliding-left.css">
 </head>
 <body>
     <div class="pages">
@@ -248,7 +251,7 @@
                 overflow: hidden;
             }
 
-            .card{
+            #right-slide .card{
                 position: absolute;
                 float: right;    
                 right: 0;
@@ -260,8 +263,9 @@
             }
 
 
-            h1{
+            .right-slide-h1{
                 position: absolute;
+                float: left;
                 top: 0;
                 left: 0;
                 margin: 0;
@@ -271,34 +275,105 @@
             }
 
 
-            h1:hover ~ #right-slide{
+            .right-slide-h1:hover ~ #right-slide{
                 width: 50%;
                 background: red !important;
             }
 
-            h1:hover ~ #right-slide > .card{        
+            .right-slide-h1:hover ~ #right-slide > .card{        
                 background: transparent;
             }
 
-            h1:not(:hover) ~ #right-slide{
+            .right-slide-h1:not(:hover) ~ #right-slide{
                 transition: 1s 1s ease-out; 
             }
         </textarea>
         <textarea class="center-object" name="" id="" cols="50" rows="30" wrap='off' readonly>
             ========= HTML =========
 
-            <div id="right-to-left-slide">
+            <h1 class="right-slide-h1">hover_here_for_right_side_slide</h1>
+            <div id="right-slide">
                 <h6>hello</h6> 
                     <div class="card"> 
                 </div>
             </div>
         </textarea>
-        <h1>hover_here_for_right_side_slide</h1>
+        <h1 class="right-slide-h1">hover_here</h1>
         <div id="right-slide">
             <h6>hello</h6> 
                 <div class="card"> 
             </div>
         </div>  
-    </div> 
+    </div>
+    <div class="pages">
+        <textarea class="center-object" name="" id="" cols="50" rows="30" wrap='off' readonly>
+            ========= css =========
+
+            #left-slide{
+                position: absolute;
+                float: left;    
+                left: 0;
+                top: 0;
+                height: 100vh;
+                width: 0vw;    
+                background: red;
+                transition: .5s ease-in-out; 
+                overflow: hidden;
+            }
+
+            #left-slide .card{
+                position: absolute;
+                float: left;    
+                left: 0;
+                top: 0;
+                height: 100vh;
+                width: 50vw;    
+                background: blue;
+                transition: background .5s .5s ease-out;
+            }
+
+
+            .left-slide-h1{
+                position: absolute;
+                float: right;
+                top: 0;
+                right: 0;
+                margin: 0;
+                background: black;
+                color: white;
+                padding: 20px 20px;
+            }
+
+
+            .left-slide-h1:hover ~ #left-slide{
+                width: 50%;
+                background: red !important;
+            }
+
+            .left-slide-h1:hover ~ #left-slide > .card{        
+                background: transparent;
+            }
+
+            .left-slide-h1:not(:hover) ~ #left-slide{
+                transition: 1s 1s ease-out; 
+            }
+        </textarea>
+        <textarea class="center-object" name="" id="" cols="50" rows="30" wrap='off' readonly>
+            ========= HTML =========
+
+            <h1>hover_here_for_right_side_slide</h1>
+            <div id="left-slide">
+                <h6>hello</h6> 
+                    <div class="card"> 
+                </div>
+            </div>
+        </textarea>
+        <h1 class="left-slide-h1">hover_here</h1>
+        <div id="left-slide">
+            <h6>hello</h6> 
+                <div class="card"> 
+            </div>
+        </div>  
+    </div>
 </body>
 </html>
