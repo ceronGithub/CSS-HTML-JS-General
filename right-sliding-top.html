@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- General -->
+    <link rel="stylesheet" href="css/center-object.css">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <link type="text/css" rel="stylesheet" href="css/page.css">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- css -->
+     <link rel="stylesheet" href="css/navbar/right-sliding-top.css">
+</head>
+<body>
+    <div class="pages">
+        <textarea class="center-object" name="" id="" cols="50" rows="30" wrap='off' readonly>
+            ========= css =========
+
+            .right-open-bar{
+                position: absolute;
+                float: right;
+                top: 0;
+                right: 0;
+                font-size: 30px;
+                margin: 0;
+                padding: 10px 10px;    
+                transition: .5s ease-in-out;
+                overflow: hidden;
+            }
+            .right-sliding-top-navbar{
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 100%;
+                /* height: 8vh; */
+                height: 0;
+                background: black;
+                transition: .5s ease-in-out;
+                overflow: hidden;
+            }
+            .right-sliding-top-navbar ul.ul-row-right{    
+                position: absolute;
+                float: right;
+                right: 0;
+                color: white;
+                display: flex;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+            .right-sliding-top-navbar ul.ul-row-right li{
+                position: relative; 
+                height: 8vh;
+                width: 4vw;
+                display: flex;
+                justify-content: center; 
+                text-align:center;
+                align-items: center;
+            }
+            .right-sliding-top-navbar ul.ul-row-right .right-closed-bar{
+                color: red;
+                font-size: 30px;
+            }
+
+
+
+            ========= JS =========
+
+            const _open_button = document.querySelector(".right-open-bar");
+            const _close_button = document.querySelector(".right-closed-bar");
+            const _navbar = document.querySelector(".right-sliding-top-navbar");
+
+            _open_button.addEventListener("click", show_navbar);
+            _close_button.addEventListener("click", close_navbar);
+
+            function show_navbar(){    
+                _open_button.style.setProperty("background", "transparent");
+                _navbar.style.setProperty("height", "8vh");
+            }
+            function close_navbar(){    
+                _navbar.style.setProperty("height", "0vh");   
+            }
+        </textarea>
+        <textarea class="center-object" name="" id="" cols="50" rows="30" wrap='off' readonly>
+            ========= HTML =========
+
+            <i class="fa-solid fa-bars right-open-bar"></i>
+            <div class="right-sliding-top-navbar">
+                <ul class="ul-row-right">                    
+                    <li>Navbar</li>
+                    <li>About</li>
+                    <li>Story</li>
+                    <li><i class="fa-solid fa-bars right-closed-bar"></i></li>
+                </ul>
+            </div>
+            <!-- js -->
+            <script src="js/navbar/right-sliding-top.js"></script>
+        </textarea>
+        <i class="fa-solid fa-bars right-open-bar"></i>
+        <div class="right-sliding-top-navbar">
+            <ul class="ul-row-right">                
+                <li>Navbar</li>
+                <li>About</li>
+                <li>Story</li>
+                <li><i class="fa-solid fa-bars right-closed-bar"></i></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- js -->
+    <script src="js/navbar/right-sliding-top.js"></script>
+</body>
+</html>
