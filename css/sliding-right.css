@@ -1,4 +1,4 @@
-#right-to-left-slide{
+#right-slide{
     position: absolute;
     float: right;    
     right: 0;
@@ -24,22 +24,25 @@
 
 h1{
     position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
     background: black;
     color: white;
-    padding: 50px 50px;
+    padding: 20px 20px;
 }
 
 
-h1:hover ~ #right-to-left-slide{
+h1:hover ~ #right-slide{
     width: 50%;
     background: red !important;
 }
 
-h1:hover ~ #right-to-left-slide > .card{        
+h1:hover ~ #right-slide > .card{        
     background: transparent;
 }
 
-h1:not(:hover) ~ #right-to-left-slide{
+h1:not(:hover) ~ #right-slide{
     transition: 1s 1s ease-out; 
 }
 

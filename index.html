@@ -10,11 +10,11 @@
     <link type="text/css" rel="stylesheet" href="css/style.css">
     <link type="text/css" rel="stylesheet" href="css/page.css">
     <link type="text/css" rel="stylesheet" href="css/nav-bar.css">
-    <link type="text/css" rel="stylesheet" href="css/sliding.css">    
+    <link type="text/css" rel="stylesheet" href="css/sliding-right.css">    
 </head>
 <body>
     <div class="pages">
-        <textarea class="center-object" name="" id="" cols="50" rows="30" readonly>
+        <textarea class="center-object" name="" id="" cols="50" rows="30" wrap='off' readonly>
            ========= css =========
             
             .nav-bar{
@@ -47,7 +47,7 @@
                 color: rebeccapurple;
             }
         </textarea>
-        <textarea class="center-object" name="" id="" cols="50" rows="30" readonly>
+        <textarea class="center-object" name="" id="" cols="50" rows="30" wrap='off' readonly>
             ========= HTML =========
             
             <div class="nav-bar">
@@ -62,7 +62,7 @@
             <ul class="ul-row-left">
                 <li>Navbar</li>
                 <li>About</li>
-                <li>Story</li>
+                <li>Story</li>                
             </ul>
         </div>
     </div>   
@@ -123,7 +123,7 @@
     </div>   
     <hr>
     <div class="pages">
-        <textarea class="center-object" name="" id="" cols="50" rows="30" readonly>
+        <textarea class="center-object" name="" id="" cols="50" rows="30" wrap='off' readonly>
             ========= css =========
 
             .nav-bar-vertical-left{
@@ -157,7 +157,7 @@
                 color: aquamarine;
             }
         </textarea>
-        <textarea class="center-object" name="" id="" cols="50" rows="30" readonly>
+        <textarea class="center-object" name="" id="" cols="50" rows="30" wrap='off' readonly>
             ========= HTML =========
 
             <div class="nav-bar-vertical-left">
@@ -178,10 +178,125 @@
     </div>   
     <hr>
     <div class="pages">
+        <textarea class="center-object" name="" id="" cols="50" rows="30" wrap='off' readonly>
+            ========= css =========
+
+            .nav-bar-vertical-right{
+                position: absolute;
+                float: right;
+                top: 0;
+                right: 0;
+                height: 100%;
+                width: 5vw;
+                background: black;
+            }
+            .nav-bar-vertical-right .ul-row-vertical-right{
+                position: absolute;
+                display: inline-block;
+                top: 0;
+                right: 0;
+                margin: 0;
+                padding: 0;    
+                list-style: none;
+                color: white;
+            }
+            .nav-bar-vertical-right .ul-row-vertical-right li{
+                height: 7vh;
+                width: 5vw;
+                display: flex;
+                justify-content: center; 
+                text-align:center;
+                align-items: center;
+            }
+            .nav-bar-vertical-right .ul-row-vertical-right li:hover{
+                color: aquamarine;
+            }
+        </textarea>
+        <textarea class="center-object" name="" id="" cols="50" rows="30" wrap='off' readonly>
+            ========= HTML =========
+
+            <div class="nav-bar-vertical-right">
+                <ul class="ul-row-vertical-right">
+                    <li>Navbar</li>
+                    <li>About</li>
+                    <li>Story</li>
+                </ul>
+            </div>
+        </textarea>
+        <div class="nav-bar-vertical-right">
+            <ul class="ul-row-vertical-right">
+                <li>Navbar</li>
+                <li>About</li>
+                <li>Story</li>
+            </ul>
+        </div>
+    </div>   
+    <hr>
+    <div class="pages">
+        <textarea class="center-object" name="" id="" cols="50" rows="30" wrap='off' readonly>
+            ========= css =========
+
+            #right-slide{
+                position: absolute;
+                float: right;    
+                right: 0;
+                top: 0;
+                height: 100vh;
+                width: 0vw;    
+                background: red;
+                transition: .5s ease-in-out; 
+                overflow: hidden;
+            }
+
+            .card{
+                position: absolute;
+                float: right;    
+                right: 0;
+                top: 0;
+                height: 100vh;
+                width: 50vw;    
+                background: blue;
+                transition: background .5s .5s ease-out;
+            }
+
+
+            h1{
+                position: absolute;
+                top: 0;
+                left: 0;
+                margin: 0;
+                background: black;
+                color: white;
+                padding: 20px 20px;
+            }
+
+
+            h1:hover ~ #right-slide{
+                width: 50%;
+                background: red !important;
+            }
+
+            h1:hover ~ #right-slide > .card{        
+                background: transparent;
+            }
+
+            h1:not(:hover) ~ #right-slide{
+                transition: 1s 1s ease-out; 
+            }
+        </textarea>
+        <textarea class="center-object" name="" id="" cols="50" rows="30" wrap='off' readonly>
+            ========= HTML =========
+
+            <div id="right-to-left-slide">
+                <h6>hello</h6> 
+                    <div class="card"> 
+                </div>
+            </div>
+        </textarea>
         <h1>hover_here_for_right_side_slide</h1>
-        <div id="right-to-left-slide">
+        <div id="right-slide">
             <h6>hello</h6> 
-            <div class="card"> 
+                <div class="card"> 
             </div>
         </div>  
     </div> 
