@@ -1,0 +1,45 @@
+.left-open-bar{
+    position: absolute;
+    float: left;
+    top: 0;
+    left: 0;
+    font-size: 30px;
+    margin: 0;
+    padding: 10px 10px;    
+    transition: .5s ease-in-out;
+    overflow: hidden;
+}
+.sliding-top-navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* height: 8vh; */
+    height: 0;
+    background: black;
+    transition: .5s ease-in-out;
+    overflow: hidden;
+}
+.sliding-top-navbar ul.ul-row-left{    
+    position: absolute;
+    float: left;
+    left: 0;
+    color: white;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.sliding-top-navbar ul.ul-row-left li{
+    position: relative; 
+    height: 8vh;
+    width: 4vw;
+    display: flex;
+    justify-content: center; 
+    text-align:center;
+    align-items: center;
+}
+.sliding-top-navbar ul.ul-row-left li .left-closed-bar{
+    color: red;
+    font-size: 30px;
+}
