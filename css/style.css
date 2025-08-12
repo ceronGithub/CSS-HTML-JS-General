@@ -3,3 +3,18 @@ body, html{
     margin: 0;
     font-family: sans-serif;
 }
+
+textarea{
+    text-align: center;
+    text-align-last: center;
+}
+
+a{
+    position: absolute;
+    /* display: flex; */
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 40px;
+    color: aliceblue;
+}
