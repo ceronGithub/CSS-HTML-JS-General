@@ -1,0 +1,32 @@
+.right-box{
+    position: absolute;
+    display: list-item;
+    float: right;
+    top: 0;
+    right: 20px;
+    border: 1px solid rebeccapurple;
+    width: 15vw;
+    height: 100%;    
+
+    /* options */
+    justify-content: center; 
+    text-align:center;
+    align-items: center;
+}
+.ul-column{
+    position: relative;
+    display: block;    
+    top: 40px;    
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.ul-column li{
+    margin: 5px 0;
+}
+
+.ul-column li .icons{    
+    height: 50px;
+    width: 50px;
+}

@@ -14,7 +14,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- ul -->
-<link rel="stylesheet" href="css/ul/row.css">
+    <link rel="stylesheet" href="css/ul/row.css">
+    <link rel="stylesheet" href="css/ul/column.css">
 </head>
 <body>
     <div class="pages">
@@ -85,24 +86,69 @@
         <textarea class="center-object" name="" id="" cols="50" rows="30" wrap='off' readonly>
             ========= HTML =========
 
-            <i class="fa-solid fa-bars right-open-bar"></i>
-            <div class="right-sliding-top-navbar">
-                <ul class="ul-row-right">                    
-                    <li>Navbar</li>
-                    <li>About</li>
-                    <li>Story</li>
-                    <li><i class="fa-solid fa-bars right-closed-bar"></i></li>
+            <div class="right-box">
+                <h1>UL COLUMN</h1>      
+                <ul class="ul-column">
+                    <li>Ceron</li>
+                    <li>Matthew</li>
+                    <li>Calsena</li>
+                </ul>  
+                <ul class="ul-column">
+                    <li><img class="icons" src="image/VS.png" alt=""></li>
+                    <li><img class="icons" src="image/vscode-1.png" alt=""></li>
+                    <li><img class="icons" src="image/vscode.png" alt=""></li>
                 </ul>
+                <ul class="ul-column">
+                    <li><label for="img">image name</label><img class="icons" src="image/VS.png" alt=""></li>
+                    <li><label for="img">image name</label><img class="icons" src="image/vscode-1.png" alt=""></li>
+                    <li><label for="img">image name</label><img class="icons" src="image/vscode.png" alt=""></li>
+                </ul>            
             </div>
-            <!-- js -->
-            <script src="js/navbar/right-sliding-top.js"></script>
+
+            ========= css =========
+
+            .right-box{
+                position: absolute;
+                display: list-item;
+                float: right;
+                top: 0;
+                right: 20px;
+                border: 1px solid rebeccapurple;
+                width: 15vw;
+                height: 100%;    
+
+                /* options */
+                justify-content: center; 
+                text-align:center;
+                align-items: center;
+            }
+            .ul-column{
+                position: relative;
+                display: block;    
+                top: 40px;    
+                margin: 0;
+                padding: 0;
+                list-style: none;
+            }
+
+            .ul-column li{
+                margin: 5px 0;
+            }
+
+            .ul-column li .icons{    
+                height: 50px;
+                width: 50px;
+            }
+
+            ========= JS =========
+
         </textarea>
         <div class="left-box">
             <h1> UL ROW</h1>      
             <ul class="ul-row">
-                <li>Ceron</li>
-                <li>Matthew</li>
-                <li>Calsena</li>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
             </ul>  
             <ul class="ul-row">
                 <li><img class="icons" src="image/VS.png" alt=""></li>
@@ -110,6 +156,24 @@
                 <li><img class="icons" src="image/vscode.png" alt=""></li>
             </ul>
             <ul class="ul-row">
+                <li><label for="img">1</label><img class="icons" src="image/VS.png" alt=""></li>
+                <li><label for="img">2</label><img class="icons" src="image/vscode-1.png" alt=""></li>
+                <li><label for="img">3</label><img class="icons" src="image/vscode.png" alt=""></li>
+            </ul>            
+        </div>
+        <div class="right-box">
+            <h1>UL COLUMN</h1>      
+            <ul class="ul-column">
+                <li>Ceron</li>
+                <li>Matthew</li>
+                <li>Calsena</li>
+            </ul>  
+            <ul class="ul-column">
+                <li><img class="icons" src="image/VS.png" alt=""></li>
+                <li><img class="icons" src="image/vscode-1.png" alt=""></li>
+                <li><img class="icons" src="image/vscode.png" alt=""></li>
+            </ul>
+            <ul class="ul-column">
                 <li><label for="img">image name</label><img class="icons" src="image/VS.png" alt=""></li>
                 <li><label for="img">image name</label><img class="icons" src="image/vscode-1.png" alt=""></li>
                 <li><label for="img">image name</label><img class="icons" src="image/vscode.png" alt=""></li>
