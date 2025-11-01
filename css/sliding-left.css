@@ -1,0 +1,101 @@
+.navbar{
+    position: relative;  
+    display: flex;
+    top: 0;
+    height: 15vh;
+    width: 100%;
+    background: green;  
+}
+.navbar ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    width: 100%;
+    z-index: 1000;
+}
+.navbar ul li{
+    float: right;
+}
+.navbar ul li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+
+    text-decoration: none;
+    padding: 6.1vh 10px; 
+}
+.navbar ul li a:hover{
+    color: black;
+    background: white;
+}
+.navbar ul li#settings-icon{
+    position: absolute;
+    float: left;  
+    left: 20px;
+
+    font-size: 20px;
+    height: 15vh;
+
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+/* sliding card */
+.sliding-card{
+    position: absolute;    
+    float: left;
+    left: 0;
+
+    height: 100%;
+    /* width: 15vw; */
+    width: 0;
+
+    overflow: hidden;
+
+    background: darkkhaki;
+
+    z-index: 1000;
+
+    /* animation */
+    transition: .5s ease-in-out;
+}
+.sliding-card ul{
+    list-style-type: none;
+
+    margin: 0;
+    padding: 0;
+
+    width: 100%;     
+}
+.sliding-card ul li{
+    float: left;
+    white-space: nowrap;
+}
+.sliding-card ul li a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+
+    text-decoration: none;
+    padding: 6vh 4rem;     
+}
+.sliding-card ul li a:hover{
+    color: white;
+    background: black;
+}
+
+/* animation */
+.fa-active{
+    color: red;
+}
+.expand-sliding-card{    
+    width: 15vw;
+}

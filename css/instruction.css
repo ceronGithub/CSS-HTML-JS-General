@@ -1,0 +1,11 @@
+.page{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 2fr 1fr 1fr;
+}
+textarea{
+    position: relative;  
+    top: 10vh;
+    height: 30rem;
+    overflow: scroll;
+}

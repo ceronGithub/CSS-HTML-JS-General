@@ -1,0 +1,51 @@
+.navbar{
+    position: relative;
+    display: flex;
+    top: 0;
+    height: 15vh;
+    width: 100%;
+    background: green;
+}
+.navbar ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    width: 100%;
+    z-index: 1000;
+}
+.navbar ul li{
+    float: right;
+}
+.navbar ul li#profile{
+    position: absolute;
+    float: left;  
+    left: 10px;
+
+    height: 15vh;
+
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+.navbar ul li#profile img{
+    border-radius: 50%;
+    height: 10vh;
+    width: 5vw;
+}
+.navbar ul li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+
+    text-decoration: none;
+    padding: 6.1vh 10px; 
+}
+
+.navbar ul li a:hover{
+    color: black;
+    background: white;
+}

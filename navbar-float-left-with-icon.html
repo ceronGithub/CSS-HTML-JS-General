@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/body.css">
+    <link rel="stylesheet" href="css/navbar-float-left-with-icon.css">
+    <link rel="stylesheet" href="css/textarea.css">
+</head>
+<body>
+    <div class="navbar">
+        <ul>            
+            <li><a href="">SECTION 1</a></li>
+            <li><a href="">SECTION 2</a></li>
+            <li><a href="">SECTION 3</a></li>
+            <li><a href="">SECTION 4</a></li>
+            <li><a href="">SECTION 5</a></li>
+            <li id="profile">
+                <label for="person-img">CERON MATTHEW</label>
+                <img src="#" alt="" id="person-img">                
+            </li>
+        </ul>
+    </div>
+    <div class="page">
+        <textarea name="" id="" cols="30" rows="10" disabled>
+        >>> HTML <<<
+
+        <head>
+            <link rel="stylesheet" href="css/body.css">
+            <link rel="stylesheet" href="css/navbar-float-left-with-icon.css">
+            <link rel="stylesheet" href="css/textarea.css">
+        </head>
+        <body>
+            <div class="navbar">
+                <ul>            
+                    <li><a href="">SECTION 1</a></li>
+                    <li><a href="">SECTION 2</a></li>
+                    <li><a href="">SECTION 3</a></li>
+                    <li><a href="">SECTION 4</a></li>
+                    <li><a href="">SECTION 5</a></li>
+                    <li id="profile">
+                        <label for="person-img">CERON MATTHEW</label>
+                        <img src="#" alt="" id="person-img">                
+                    </li>
+                </ul>
+            </div>
+        </body>
+        </textarea>
+        <textarea name="" id="" cols="30" rows="10" disabled>
+        >>> navbar-float-left-with-icon.css <<<
+
+        .navbar{
+            position: relative;
+            display: flex;
+            top: 0;
+            height: 15vh;
+            width: 100%;
+            background: green;
+        }
+        .navbar ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+
+            width: 100%;
+            z-index: 1000;
+        }
+        .navbar ul li{
+            float: left;
+        }
+        .navbar ul li#profile{
+            position: absolute;
+            float: right;  
+            right: 10px;
+
+            height: 15vh;
+
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            align-items: center;
+        }
+        .navbar ul li#profile img{
+            border-radius: 50%;
+            height: 10vh;
+            width: 5vw;
+        }
+        .navbar ul li a{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            color: white;
+
+            text-decoration: none;
+            padding: 6.1vh 10px; 
+        }
+
+        .navbar ul li a:hover{
+            color: black;
+            background: white;
+        }
+        </textarea>
+        <textarea name="" id="" cols="30" rows="10" disabled>
+        >>> textarea.css <<<
+
+        .page{
+            display: grid;
+            grid-gap: 20px;
+            /* grid-template-columns: repeat(3, 1fr); */
+            grid-template-columns: 1fr 1fr 1fr;  
+        }
+        textarea{
+            position: relative;
+            top: 5vh;
+            height: 25rem;
+            overflow: scroll;  
+        }
+
+        textarea:nth-child(1){
+            grid-column: 3 span;
+        }
+        </textarea>
+        <textarea name="" id="" cols="30" rows="10" disabled>
+        >>> JS <<<
+        </textarea>
+    </div>
+</body>
+</html>

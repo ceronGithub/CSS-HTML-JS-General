@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/body.css">
+    <link rel="stylesheet" href="css/sliding-top.css">
+    <link rel="stylesheet" href="css/textarea.css">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="">SECTION 1</a></li>
+            <li><a href="">SECTION 2</a></li>
+            <li><a href="">SECTION 3</a></li>
+            <li><a href="">SECTION 4</a></li>
+            <li><a href="">SECTION 5</a></li>            
+            <li id="settings-icon">
+                <i class="fa-solid fa-sliders" id="fa-sliders-id"></i>
+            </li>
+        </ul>
+    </div>
+    <div class="sliding-card">
+        <ul>
+            <li><a href="">SUB-SECTION 1</a></li>
+            <li><a href="">SUB-SECTION 2</a></li>
+            <li><a href="">SUB-SECTION 3</a></li>
+        </ul>
+    </div>
+    <div class="page">
+
+        <textarea name="" id="" cols="30" rows="10" disabled>
+        >>> sliding-left.html <<<
+
+        <head>
+            <!-- css -->
+            <link rel="stylesheet" href="css/body.css">
+            <link rel="stylesheet" href="css/sliding-top.css">
+            <link rel="stylesheet" href="css/textarea.css">
+
+            <!-- fontawesome -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            
+        </head>
+        <body>
+            <div class="navbar">
+                <ul>
+                    <li><a href="">SECTION 1</a></li>
+                    <li><a href="">SECTION 2</a></li>
+                    <li><a href="">SECTION 3</a></li>
+                    <li><a href="">SECTION 4</a></li>
+                    <li><a href="">SECTION 5</a></li>            
+                    <li id="settings-icon">
+                        <i class="fa-solid fa-sliders" id="fa-sliders-id"></i>
+                    </li>
+                </ul>
+            </div>
+            <div class="sliding-card">
+                <ul>
+                    <li><a href="">SUB-SECTION 1</a></li>
+                    <li><a href="">SUB-SECTION 2</a></li>
+                    <li><a href="">SUB-SECTION 3</a></li>
+                </ul>
+            </div>
+            <script src="js/sliding-top.js"></script>
+        </body>
+        </textarea>
+
+        <textarea name="" id="" cols="30" rows="10" disabled>
+        >>> sliding-left.css <<<
+
+        .navbar{
+            position: relative;
+            display: flex;
+            top: 0;
+            height: 15vh;
+            width: 100%;
+            background: green;  
+        }
+        .navbar ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+
+            width: 100%;
+            z-index: 1000;
+        }
+        .navbar ul li{
+            float: right;
+        }
+        .navbar ul li a{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            color: white;
+
+            text-decoration: none;
+            padding: 6.1vh 10px; 
+        }
+        .navbar ul li a:hover{
+            color: black;
+            background: white;
+        }
+        .navbar ul li#settings-icon{
+            position: absolute;
+            float: left;  
+            left: 20px;
+
+            font-size: 20px;
+            height: 15vh;
+
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* sliding card */
+        .sliding-card{
+            position: relative;
+            display: flex;
+            /* height: 15vh;     */
+            height: 0;
+            width: 100%;
+            background: darkkhaki;
+
+            /* animation */
+            transition: .5s ease-in-out;
+        }
+        .fa-active{
+            color: red;
+        }
+        .expand-sliding-card{    
+            height: 15vh;
+        }
+        .sliding-card ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+
+            width: 100%;
+            z-index: 1000;
+        }
+        .sliding-card ul li{
+            float: right;
+        }
+        .sliding-card ul li a{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            color: white;
+
+            text-decoration: none;
+            padding: 6.1vh 10px; 
+        }
+        .sliding-card ul li a:hover{
+            color: black;
+            background: white;
+        }
+        </textarea>
+        <textarea name="" id="" cols="30" rows="10" disabled>
+        >>> textarea.css <<<
+
+        .page{
+            display: grid;
+            grid-gap: 20px;
+            /* grid-template-columns: repeat(3, 1fr); */
+            grid-template-columns: 1fr 1fr 1fr;  
+        }
+        textarea{
+            position: relative;
+            top: 5vh;
+            height: 25rem;
+            overflow: scroll;  
+        }
+
+        textarea:nth-child(1){
+            grid-column: 3 span;
+        }
+        </textarea>
+        <textarea name="" id="" cols="30" rows="10" disabled>
+        >>> textarea.css <<<
+
+        const _open_button = document.querySelector("#fa-sliders-id");
+
+        const _sliding_card = document.querySelector(".sliding-card");
+
+        _open_button.addEventListener("click", show_navbar);
+
+        function show_navbar(){   
+            _open_button.classList.toggle('fa-active'); 
+
+            _sliding_card.classList.toggle('expand-sliding-card');
+
+        }        
+        </textarea>
+    </div>
+    <script src="js/sliding-top.js"></script>
+</body>
+</html>
