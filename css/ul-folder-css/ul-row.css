@@ -1,6 +1,9 @@
 ul#without-icon{    
     list-style-type: none;
 
+    display: flex;
+    flex-direction: row;
+
     margin: 0;
     padding: 0;
 
@@ -14,8 +17,7 @@ ul#without-icon li{
 ul#without-icon li a{
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    align-items: center;    
     
     color: black;
 
@@ -36,6 +38,9 @@ ul#without-icon li a:hover{
 ul#with-icon{    
     list-style-type: none;
 
+    display: flex;
+    flex-direction: row;
+
     margin: 0;
     padding: 0;
 
@@ -50,7 +55,7 @@ ul#with-icon li a{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
+    /* flex-direction: row; */
     
     color: black;
 
