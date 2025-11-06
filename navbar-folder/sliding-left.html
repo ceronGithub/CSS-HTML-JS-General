@@ -6,9 +6,9 @@
     <title>Document</title>
 
     <!-- css -->
-    <link rel="stylesheet" href="css/body.css">
-    <link rel="stylesheet" href="css/sliding-right.css">
-    <link rel="stylesheet" href="css/textarea.css">
+    <link rel="stylesheet" href="../css/body.css">
+    <link rel="stylesheet" href="../css/textarea.css">
+    <link rel="stylesheet" href="../css/navbar-folder-css/sliding-left.css">
 
     <!-- fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -37,11 +37,12 @@
     <div class="page">
         <textarea name="" id="" cols="30" rows="10" disabled>
             >>> HTML <<<
+            
             <head>
                 <!-- css -->
                 <link rel="stylesheet" href="css/body.css">
-                <link rel="stylesheet" href="css/sliding-right.css">
                 <link rel="stylesheet" href="css/textarea.css">
+                <link rel="stylesheet" href="css/sliding-left.css">
 
                 <!-- fontawesome -->
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -67,11 +68,11 @@
                         <li><a href="">SECTION 3</a></li>
                     </ul>
                 </div>
-                <script src="js/sliding-right.js"></script>
+                <script src="js/sliding-left.js"></script>
             </body>
         </textarea>
         <textarea name="" id="" cols="30" rows="10" disabled>
-            >>> sliding-right.css <<<
+            >>> sliding-left.css <<<
 
             .navbar{
                 position: relative;  
@@ -106,25 +107,21 @@
                 color: black;
                 background: white;
             }
-            .navbar ul li#settings-icon{
+            .navbar ul li#settings-icon i{
                 position: absolute;
                 float: left;  
-                left: 20px;
+                left: 0px;
 
-                font-size: 20px;
-                height: 15vh;
-
-                display: flex;
-                gap: 1rem;
-                justify-content: center;
-                align-items: center;
+                font-size: 20px;    
+            
+                padding: 6vh 30px;    
             }
 
             /* sliding card */
             .sliding-card{
                 position: absolute;    
-                float: right;
-                right: 0;
+                float: left;
+                left: 0;
 
                 height: 100%;
                 /* width: 15vw; */
@@ -173,8 +170,7 @@
             }
             .expand-sliding-card{    
                 width: 15vw;
-            }
-
+            }         
         </textarea>
         <textarea name="" id="" cols="30" rows="10" disabled>
             >>> textarea.css <<<
@@ -194,10 +190,10 @@
 
             textarea:nth-child(1){
                 grid-column: 3 span;
-            }
+            }            
         </textarea>
         <textarea name="" id="" cols="30" rows="10" disabled>
-            >>> sliding-right.js <<<
+            >>> sliding-left.js <<<
 
             const _open_button = document.querySelector("#fa-sliders-id");
             const _sliding_card = document.querySelector(".sliding-card");
@@ -209,6 +205,6 @@
             }
         </textarea>
     </div>
-    <script src="js/sliding-right.js"></script>
+    <script src="../js/sliding-left.js"></script>
 </body>
 </html>

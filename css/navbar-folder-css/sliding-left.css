@@ -31,18 +31,14 @@
     color: black;
     background: white;
 }
-.navbar ul li#settings-icon{
+.navbar ul li#settings-icon i{
     position: absolute;
     float: left;  
-    left: 20px;
+    left: 0px;
 
-    font-size: 20px;
-    height: 15vh;
-
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    align-items: center;
+    font-size: 20px;    
+   
+    padding: 6vh 30px;    
 }
 
 /* sliding card */

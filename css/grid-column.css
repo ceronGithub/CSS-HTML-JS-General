@@ -1,0 +1,26 @@
+.page{
+    display: grid;
+    grid-gap: 5px;
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: 90% auto;
+}
+
+.seperator-div{    
+    position: relative;
+    border: 1px solid rebeccapurple;
+    height: 10rem;
+    border-radius: 4px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0;
+    margin: 0;
+}
+
+.seperator-div:nth-child(3), 
+.seperator-div:nth-child(4){
+    position: relative;
+    top: -9rem;
+}

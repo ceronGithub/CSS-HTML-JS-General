@@ -6,12 +6,13 @@ html, body{
 .page{
     position: relative;
     height: 100vh;
-    width: 100%;    
+    width: 100%;  
 }
 
 .center
 {
-    display: flex;    
+    position: relative;
+    display: flex;        
     justify-content: center;
     align-items: center;
 }

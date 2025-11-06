@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href="css/body.css">
-    <link rel="stylesheet" href="css/navbar-float-right-with-icon.css">
-    <link rel="stylesheet" href="css/textarea.css">
+    <link rel="stylesheet" href="../css/body.css">
+    <link rel="stylesheet" href="../css/navbar-folder-css/navbar-float-left-with-icon.css">
+    <link rel="stylesheet" href="../css/textarea.css">
 </head>
 <body>
     <div class="navbar">
@@ -18,38 +18,38 @@
             <li><a href="">SECTION 4</a></li>
             <li><a href="">SECTION 5</a></li>
             <li id="profile">
-                <img src="#" alt="" id="person-img">
                 <label for="person-img">CERON MATTHEW</label>
+                <img src="#" alt="" id="person-img">                
             </li>
         </ul>
     </div>
     <div class="page">
         <textarea name="" id="" cols="30" rows="10" disabled>
-            >>>>>>>> HTML <<<<<<<
+        >>> HTML <<<
 
-            <head>
-                <link rel="stylesheet" href="css/body.css">
-                <link rel="stylesheet" href="css/navbar-float-right-with-icon.css">
-                <link rel="stylesheet" href="css/textarea.css">
-            </head>
-            <body>
-                <div class="navbar">
-                    <ul>            
-                        <li><a href="">SECTION 1</a></li>
-                        <li><a href="">SECTION 2</a></li>
-                        <li><a href="">SECTION 3</a></li>
-                        <li><a href="">SECTION 4</a></li>
-                        <li><a href="">SECTION 5</a></li>
-                        <li id="profile">
-                            <img src="#" alt="" id="person-img">
-                            <label for="person-img">CERON MATTHEW</label>
-                        </li>
-                    </ul>
-                </div>
-            </body>
+        <head>
+            <link rel="stylesheet" href="css/body.css">
+            <link rel="stylesheet" href="css/navbar-float-left-with-icon.css">
+            <link rel="stylesheet" href="css/textarea.css">
+        </head>
+        <body>
+            <div class="navbar">
+                <ul>            
+                    <li><a href="">SECTION 1</a></li>
+                    <li><a href="">SECTION 2</a></li>
+                    <li><a href="">SECTION 3</a></li>
+                    <li><a href="">SECTION 4</a></li>
+                    <li><a href="">SECTION 5</a></li>
+                    <li id="profile">
+                        <label for="person-img">CERON MATTHEW</label>
+                        <img src="#" alt="" id="person-img">                
+                    </li>
+                </ul>
+            </div>
+        </body>
         </textarea>
         <textarea name="" id="" cols="30" rows="10" disabled>
-        >>> navbar-float-right-with-icon.css <<<
+        >>> navbar-float-left-with-icon.css <<<
 
         .navbar{
             position: relative;
@@ -68,12 +68,12 @@
             z-index: 1000;
         }
         .navbar ul li{
-            float: right;
+            float: left;
         }
         .navbar ul li#profile{
             position: absolute;
-            float: left;  
-            left: 10px;
+            float: right;  
+            right: 10px;
 
             height: 15vh;
 
@@ -104,7 +104,7 @@
         }
         </textarea>
         <textarea name="" id="" cols="30" rows="10" disabled>
-        >>>>>>>> textarea.css <<<<<<<
+        >>> textarea.css <<<
 
         .page{
             display: grid;
@@ -116,16 +116,15 @@
             position: relative;
             top: 5vh;
             height: 25rem;
-            overflow: scroll;    
+            overflow: scroll;  
         }
 
         textarea:nth-child(1){
             grid-column: 3 span;
         }
         </textarea>
-
         <textarea name="" id="" cols="30" rows="10" disabled>
-        >>>>>>>> JS <<<<<<<
+        >>> JS <<<
         </textarea>
     </div>
 </body>

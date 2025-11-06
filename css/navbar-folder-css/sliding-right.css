@@ -1,5 +1,5 @@
 .navbar{
-    position: relative;
+    position: relative;  
     display: flex;
     top: 0;
     height: 15vh;
@@ -31,27 +31,28 @@
     color: black;
     background: white;
 }
-.navbar ul li#settings-icon{
+.navbar ul li#settings-icon i{
     position: absolute;
     float: left;  
-    left: 20px;
+    left: 0px;
 
-    font-size: 20px;
-    height: 15vh;
-
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    align-items: center;
+    font-size: 20px;    
+   
+    padding: 6vh 30px;    
 }
 
 /* sliding card */
 .sliding-card{
-    position: relative;
-    
-    height: 0;
-    width: 100%;
+    position: absolute;    
+    float: right;
+    right: 0;
+
+    height: 100%;
+    /* width: 15vw; */
+    width: 0;
+
     overflow: hidden;
+
     background: darkkhaki;
 
     z-index: 1000;
@@ -61,27 +62,30 @@
 }
 .sliding-card ul{
     list-style-type: none;
+
     margin: 0;
     padding: 0;
 
-    width: 100%; 
+    width: 100%;     
 }
 .sliding-card ul li{
-    float: right;
+    float: left;
+    white-space: nowrap;
 }
 .sliding-card ul li a{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
     color: white;
 
     text-decoration: none;
-    padding: 6.1vh 10px; 
+    padding: 6vh 4rem;     
 }
 .sliding-card ul li a:hover{
-    color: black;
-    background: white;
+    color: white;
+    background: black;
 }
 
 /* animation */
@@ -89,5 +93,5 @@
     color: red;
 }
 .expand-sliding-card{    
-    height: 15vh;
+    width: 15vw;
 }
