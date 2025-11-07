@@ -1,14 +1,19 @@
-.general-navbar{    
-    position: absolute;    
+.general-navbar{ 
+    
+    /* start : responsive */
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 auto;
+    /* end : responsive */
+
+    position: relative;    
 
     top: 0;
 
     height: 15vh;
     width: 100%;
 
-    background: black; 
-
-    z-index: 1000;    
+    background: black;     
 }
 .general-navbar ul{
     list-style-type: none;
@@ -35,3 +40,13 @@
     background: white;
 }
 
+
+@media (max-width: 50rem)
+{
+    .general-navbar{
+        font-size: 11px;
+    }
+    .general-navbar ul li a{
+        padding: 6.5vh 10px;
+    }
+}
