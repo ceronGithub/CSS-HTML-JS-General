@@ -1,0 +1,83 @@
+=========================================== HTML ===========================================
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../css/body.css">
+    <link rel="stylesheet" href="../css/responsive-folder-css/2-div-grid.css">
+</head>
+<body>
+    <div class="page">
+        
+        <div class="parent-1st">
+            <div class="child">
+                <a href="">CODE HERE</a>
+            </div>
+            <div class="child">
+                <h3>Display: grid; 2 div's in columns</h3>
+                <h3>This div, changes when size change.</h3>
+            </div>
+        </div>
+
+
+        <div class="parent-2nd">
+            <div class="child">
+                <a href="">CODE HERE</a>
+            </div>
+            <div class="child">
+                <h3>Display: grid; 3 div's in columns</h3>
+                <h3>This div, changes when size change.</h3>
+            </div>
+            <div class="child"></div>
+        </div>        
+    </div>
+</body>
+</html>
+
+=========================================== CSS ===========================================
+
+.page{    
+    background: green;
+}
+
+.parent-1st{
+    position: relative;
+    top: 5%;
+
+    display: grid;
+    column-gap: .2rem;
+    grid-template-columns: 20% 1fr;
+
+    height: 45%;
+    width: 100%;
+}
+
+.parent-2nd{
+    position: relative;
+    top: 7%;
+
+    display: grid;
+    column-gap: .2rem;
+    grid-template-columns: 20% 1fr 20%;
+
+    height: 45%;
+    width: 100%;
+}
+
+.child{
+    background: burlywood;
+    border-radius: 8px;
+}
+.child:nth-child(1){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}    
+.child:nth-child(1) a{
+    color: black;
+    text-decoration: none; 
+}
