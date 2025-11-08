@@ -31,10 +31,18 @@
     text-decoration: none;
 }
 
+/* Smooth animation while shrinking */
+.page h1{
+    transition: .5s font-size ease-in-out;
+}
+
 @media all and (max-width: 1100px){
     .child{
         height: 150px;
         width: 150px;
+    }
+    .page h1 {
+        font-size: 20px;
     }
 }
 

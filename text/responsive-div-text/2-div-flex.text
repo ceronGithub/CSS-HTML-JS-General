@@ -1,0 +1,95 @@
+=========================================== HTML ===========================================
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../css/body.css">
+    <link rel="stylesheet" href="../css/responsive-folder-css/2-div-flex.css">
+
+</head>
+<body>    
+    <div class="page">
+        <h1 style="position: absolute;">2 div's in a row</h1>
+
+        /* ROW CODE */
+        <div class="parent-row">            
+            <div class="child">
+                <a href="">CODE HERE</a>
+            </div>
+            <div class="child"></div>
+        </div>
+
+
+        /* COLUMN CODE */
+        <h1 style="position: absolute;">2 div's in a column</h1>
+        <div class="parent-column">         
+            <div class="child">
+                <a href="">CODE HERE</a>
+            </div>
+            <div class="child"></div>
+        </div>
+        
+    </div>
+</body>
+</html>
+
+=========================================== CSS ===========================================
+
+.parent-row{
+    background: yellow;
+    width: 100%;
+    height: 50vh;
+
+    display: flex;
+    flex-direction: row;  
+    flex-wrap: wrap; 
+    gap: 10px;  
+
+    /* center */
+    justify-content: center;
+    align-content: center;
+}
+.parent-column{
+    background: yellow;
+    width: 100%;
+    height: 50vh;
+
+    display: flex;
+    flex-direction: column;  
+    flex-wrap: wrap; 
+    gap: 10px;  
+
+    /* center */
+    justify-content: center;
+    align-content: center;
+}
+
+.child{
+    flex-shrink: 1;
+    flex-basis: auto;  
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.child a{
+    color: white;
+    text-decoration: none;
+}
+
+.child:nth-child(1){
+    width: 25% !important;
+    height: 25vh;
+    background: rebeccapurple;
+}
+
+.child:nth-child(2){
+    width: 15% !important;
+    height: 15vh;
+    background: blue;
+}

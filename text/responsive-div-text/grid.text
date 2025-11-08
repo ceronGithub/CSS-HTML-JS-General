@@ -1,3 +1,5 @@
+=========================================== HTML ===========================================
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,11 +17,9 @@
         </h1>  
         <div class="parent">
             <div class="child">
-                <a href="https://www.youtube.com/watch?v=JYfiaSKeYhE" target="_blank">YOUTUBE TUTORIAL</a>
+                <a href="#" target="_blank">YOUTUBE TUTORIAL</a>
             </div>
-            <div class="child">
-                <a href="../text/responsive-div-text/grid.text" target="_blank">CODE HERE</a>
-            </div>
+            <div class="child"></div>
             <div class="child"></div>
             <div class="child"></div>
             <div class="child"></div>
@@ -31,3 +31,35 @@
     </div>    
 </body>
 </html>
+
+=========================================== CSS ===========================================
+
+.page{
+    background: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent{
+    display: grid;    
+    grid-template-columns: 150px 150px 150px;
+    grid-template-rows: 150px 150px 150px;
+    gap: 1em;
+}
+.child{    
+    padding: 2em;
+    border-radius: 8px;
+    font-size: 20px;
+    text-align: center;
+    background: burlywood;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.child a{
+    color: black;
+    text-decoration: none;
+}
