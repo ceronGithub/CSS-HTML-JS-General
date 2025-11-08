@@ -1,0 +1,19 @@
+.page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent{
+    display: grid;    
+    grid-template-columns: 150px 150px 150px;
+    grid-template-rows: 150px 150px 150px;
+    gap: 1em;
+}
+.child{    
+    padding: 2em;
+    border-radius: 8px;
+    font-size: 20px;
+    text-align: center;
+    background: burlywood;
+}

@@ -1,36 +1,40 @@
 .parent{
-    display: flex;
-    /* gap: 1rem;
-    flex-wrap: wrap; */
-
     background: yellow;
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: .5rem;
 }
 .child{
-    flex: 1 1 auto;
-}
-.child:nth-child(1){
-    position: absolute;
-    float: left;
-    left: 0;    
-
-    background: green;
-    width: 50%;
-    height: 50vh;
-}
-.child:nth-child(2){   
-    position: absolute;
-    float: right;
-    right: 0;   
+    height: 200px;
+    width: 200px;
     background: blue;
-    width: 50%;
-    height: 50vh;
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    
+    transition: .5 height ease-in-out, .5 width ease-in-out;
 }
-.child:nth-child(3){   
-    position: absolute;
-    bottom: 0;
-    background: rebeccapurple;
-    width: 100%;
-    height: 50vh;
+
+.child a{
+    color: white;
+    text-decoration: none;
 }
+
+@media all and (max-width: 1100px){
+    .child{
+        height: 150px;
+        width: 150px;
+    }
+}
+

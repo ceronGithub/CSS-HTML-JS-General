@@ -7,7 +7,7 @@ ul#without-icon{
     margin: 0;
     padding: 0;
 
-    width: 100%; 
+    width: 100%;
 }
 
 ul#without-icon li{
@@ -17,7 +17,7 @@ ul#without-icon li{
 ul#without-icon li a{
     display: flex;
     justify-content: center;
-    align-items: center;    
+    align-items: center;        
     
     color: black;
 
