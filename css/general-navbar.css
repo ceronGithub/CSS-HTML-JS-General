@@ -1,5 +1,4 @@
 .general-navbar{ 
-    
     /* start : responsive */
     display: flex;
     flex-wrap: wrap;
@@ -32,25 +31,103 @@
 .general-navbar ul li a{    
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
     
     color: white;
-
+    
     text-decoration: none;
-    padding: 6.1vh 10px;    
+    padding: 6.1vh 10px;
+
+    transition: .5s display ease-in-out;
 }
 .general-navbar ul li a:hover{
     color: black;
     background: white;
 }
-
-
-@media all and (max-width: 800px)
+.general-navbar ul li#settings-icon i
 {
-    .general-navbar{
-        font-size: 11px;
+    transition: .5s display ease-in-out;
+    display: none;    
+}
+
+.sliding-card{
+    display: none;
+}
+
+@media all and (max-width: 1000px)
+{
+    .general-navbar ul li a{        
+        display: none;
     }
-    .general-navbar ul li a{
-        padding: 6.5vh 10px;
+
+    .sliding-card{
+        position: absolute;    
+        float: left;
+        left: 0;
+
+        display: flex;
+        
+        width: 0;
+        height: 100vh;
+
+        background: black;
+
+        overflow: hidden;
+        z-index: 1000;
+
+        /* animation */
+        transition: .5s width ease-in-out;
+    }
+    .sliding-card ul{
+        list-style-type: none;
+
+        margin: 0;
+        padding: 0;
+
+        width: 100%;     
+    }
+    .sliding-card ul li{
+        float: left;
+        font-size: 12px;               
+    }
+    .sliding-card ul li a{        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;        
+        
+        float: left;
+        left: 0;
+
+        color: white;
+
+        text-decoration: none;
+        padding: 3vh 4rem;
+    }
+    .sliding-card ul li a:hover{
+        color: black;
+        background: green;
+    }
+
+    .general-navbar ul li#settings-icon i{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        float: left;
+        left: 0;
+        
+        color: white;
+
+        text-decoration: none;
+        padding: 6.25vh 20px;        
+    }  
+
+    /* animation */
+    .fa-active{
+        color: red !important;
+    }
+    .expand-sliding-card{
+        width: 200px;
     }
 }
