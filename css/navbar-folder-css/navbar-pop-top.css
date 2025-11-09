@@ -1,0 +1,73 @@
+#navbar-icon-open i{
+    position: absolute;
+    top: 0;
+    float: left;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 6.25vh 20px;    
+
+    background: black;  
+    
+    color: white;    
+}
+
+.navbar-sliding{
+    position: absolute;
+    top: 0;
+    left: 0;    
+
+    overflow: hidden;
+
+    /* height: 15vh; */
+    height: 0;
+    width: 100%;
+
+    background: black;
+
+    z-index: 100;
+
+    transition: .5s height ease-in-out;
+}
+.navbar-sliding ul{    
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    width: 100%;       
+}
+.navbar-sliding ul li{  
+    float: left;
+    left: 0;
+}
+.navbar-sliding ul li a, .navbar-sliding ul li#navbar-icon-close i{    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+
+    text-decoration: none;
+    padding: 6.25vh 20px;
+    
+    transition: .25s font-size ease-in-out;
+}
+
+.navbar-sliding ul li a:hover, .navbar-sliding ul li i:hover{
+    font-size: 18px;
+}
+
+/* fa-active */
+.fa-color-active{
+    color: greenyellow !important;    
+}
+.expand-navbar{
+    height: 15vh;
+}
+.unexpand-navbar{
+    height: 0;
+}
