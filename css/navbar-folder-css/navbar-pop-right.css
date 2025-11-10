@@ -1,36 +1,38 @@
 #navbar-icon-open i{
     position: relative;
     top: 0;
-    float: left;
-    left: 0;
+    float: right;
+    right: 0;
 
     display: flex;
     justify-content: center;
     align-items: center;
 
-    padding: 6.25vh 20px;    
+    padding: 40px 100px;    
 
-    background: black;  
+    background: black;
     
-    color: white;    
+    color: white; 
+    
+    font-size: 20px;
 }
 
 .navbar-sliding{
     position: absolute;
     top: 0;
-    left: 0;    
+    right: 0;    
 
     overflow: hidden;
 
     /* height: 15vh; */
-    height: 0;
-    width: 100%;
+    height: 100%;
+    width: 0;
 
     background: black;
 
     z-index: 100;
 
-    transition: .5s height ease-in-out;
+    transition: .5s width ease-in-out;
 }
 .navbar-sliding ul{    
     list-style-type: none;
@@ -42,8 +44,9 @@
 .navbar-sliding ul li{  
     float: left;
     left: 0;
+    white-space: nowrap;
 }
-.navbar-sliding ul li a, .navbar-sliding ul li#navbar-icon-close i{    
+.navbar-sliding ul li#navbar-icon-close i{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -52,13 +55,27 @@
     color: white;
 
     text-decoration: none;
-    padding: 6.25vh 20px;
+    padding: 40px 105px;    
+    
+    transition: .25s font-size ease-in-out;
+}
+.navbar-sliding ul li a{    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+
+    text-decoration: none;
+    padding: 40px 80px;
     
     transition: .25s font-size ease-in-out;
 }
 
-.navbar-sliding ul li a:hover, .navbar-sliding ul li i:hover{
+.navbar-sliding ul li a:hover, .navbar-sliding ul li#navbar-icon-close i:hover{
     font-size: 18px;
+    background: green;
 }
 
 /* fa-active */
@@ -66,8 +83,8 @@
     color: greenyellow !important;    
 }
 .expand-navbar{
-    height: 15vh;
+    width: 225px;
 }
 .unexpand-navbar{
-    height: 0;
+    width: 0;
 }
