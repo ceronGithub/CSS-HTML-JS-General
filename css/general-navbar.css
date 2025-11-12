@@ -26,21 +26,27 @@
     width: 100%;    
 }
 .general-navbar ul li{  
-    float: left;
+    float: left;    
 }
 .general-navbar ul li a{    
     display: flex;
     justify-content: center;
     align-items: center;
     
+    line-height: 15px;
+
     color: white;
     
     text-decoration: none;
-    padding: 6.35vh 10px;
+    padding: 4vh 10px;
 
     transition: .5s display ease-in-out;
 
     font-size: 12px;
+}
+.general-navbar ul li:nth-child(6) a{
+    /* padding: 5.15vh 10px !important; */
+    line-height: 22.5px;
 }
 .general-navbar ul li a:hover{
     color: black;
@@ -108,7 +114,7 @@
     }
     .sliding-card ul li a:hover{
         color: black;
-        background: green;
+        background: violet;
     }
 
     .general-navbar ul li#settings-icon i{
