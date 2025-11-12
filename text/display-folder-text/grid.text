@@ -8,7 +8,7 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="../css/body.css">
-    <link rel="stylesheet" href="../css/responsive-folder-css/grid.css">
+    <link rel="stylesheet" href="../css/display-folder-css/grid.css">
 </head>
 <body>
     <div class="page">
@@ -32,7 +32,7 @@
 </body>
 </html>
 
-=========================================== CSS ===========================================
+=========================================== css/display-folder-css/grid.css ===========================================
 
 .page{
     background: green;

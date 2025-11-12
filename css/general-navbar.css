@@ -36,13 +36,15 @@
     color: white;
     
     text-decoration: none;
-    padding: 6.1vh 10px;
+    padding: 6.35vh 10px;
 
     transition: .5s display ease-in-out;
+
+    font-size: 12px;
 }
 .general-navbar ul li a:hover{
     color: black;
-    background: white;
+    background: violet;
 }
 .general-navbar ul li#settings-icon i
 {

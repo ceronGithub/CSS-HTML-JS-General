@@ -8,7 +8,7 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="../css/body.css">
-    <link rel="stylesheet" href="../css/responsive-folder-css/div.css">
+    <link rel="stylesheet" href="../css/display-folder-css/div.css">
 </head>
 <body>
     <div class="page">
@@ -28,7 +28,7 @@
 </body>
 </html>
 
-=========================================== CSS ===========================================
+=========================================== css/display-folder-css/div.css ===========================================
 
 .page{    
     background: burlywood;
