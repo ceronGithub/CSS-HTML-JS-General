@@ -1,0 +1,23 @@
+.section{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1vw 1fr;
+    grid-template-rows: 100vh;
+}
+#box-one, #box-two{    
+    width: 300px;
+    height: 300px;
+    background: blue;
+    border: 2px solid black;
+}
+#box-two{
+    transition: border-radius .5s ease-in-out;
+}
+#box-one:hover{
+    border-radius: 50%;
+}
+#box-two:hover{    
+    border-radius: 50%;
+}
+
+
